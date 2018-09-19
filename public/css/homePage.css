@@ -74,5 +74,15 @@
 	font: 16px Lucida Sans, Trebuchet MS, Tahoma, sans-serif;
 	height: 8px;
 	padding: 10px;
-	width: 12vw;
+    width: 12vw;
+    text-align: center;
+}
+.planet-complete-button{
+    height: 100px;
+    width: 25vw;
+    border-radius: 50%;
+    box-shadow:inset 0px 0px 20px 20px wheat;
+    background-color: transparent;
+    color: orange;
+    font-size: 24px;
 }
