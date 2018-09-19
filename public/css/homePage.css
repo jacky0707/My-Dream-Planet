@@ -12,10 +12,13 @@
     align-items: center;
 }
 .planet-part{
-    width: 35vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
 }
 .nothing{
-    width: 30vw;
+    width: 25vw;
 }
 .button-part{
     justify-content: space-around;
@@ -29,4 +32,9 @@
     margin: 1vw;
     border-radius: 10%;
     background: solid 1px transparent;
+}
+.label{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
