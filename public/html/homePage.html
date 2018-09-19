@@ -33,11 +33,14 @@
 
     <main>
         <div class="dream-part">
-            <label>
-                性別：<input type="checkbox">男 <input type="checkbox">女<br>
-                年齡：<input type="text">
+            <label class="home-page-info">
+                <div class="home-page-info">性別</div>
+                <button class="gender-button boy-button"></button>
+                <button class="gender-button girl-button"></button>
+                <div class="home-page-info">年齡</div>
+                <input type="text" class="text-input" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" >
             </label>
-            <div>夢想の元素</div>
+            <div class="home-page-info">夢想の元素</div>
             <div class="button-part">
                 <button class="dream-button">房子</button>
                 <button class="dream-button">車子</button>
@@ -52,14 +55,14 @@
         </div>
         <div class="planet-part">
             <label class="label">
-                夢想星球名<br>
-                <input type="text">
+                <div class="home-page-info">夢想星球名</div>
+                <input type="text" class="text-input">
             </label>
             <div class="planet"></div>
             <button>星球完成，開始診斷！！</button>
         </div>
-        <div class="nothing">
-            夢想項目：<!--從local Storage 拿-->
+        <div class="dream-list-part">
+            <div class="home-page-info">夢想項目</div><!--從local Storage 拿-->
         </div>
     </main>
     

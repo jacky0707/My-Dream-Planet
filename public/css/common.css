@@ -6,6 +6,7 @@ body{
     border-width: 0px;
     background-image: url("../img/space.png");
     background-size:100vw;
+    border-width: 0px;
     color:white;
 }
 header{

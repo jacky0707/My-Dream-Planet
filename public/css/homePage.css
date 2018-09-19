@@ -1,4 +1,5 @@
 .planet{
+    margin: 50px 0px;
     height: 35vw;
     width: 35vw;
     border-radius: 100%;
@@ -6,7 +7,6 @@
 }
 .dream-part{
     width: 30vw;
-    height: 21vw;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -17,8 +17,11 @@
     align-items: center;
     width: 40vw;
 }
-.nothing{
+.dream-list-part{
     width: 25vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 .button-part{
     justify-content: space-around;
@@ -37,4 +40,39 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+}
+.home-page-info{
+    text-align: center;
+    font-size: 24px;
+    padding:10px;
+}
+.gender-button{
+    height: 4vw;
+    width: 4vw;
+    border-radius: 100%;
+    background-color: wheat;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border:solid 1px black;
+}
+.boy-button{
+    background-image: url("../img/boy.png") ;
+}
+.girl-button{
+    background-image: url("../img/girl.png") ;
+}
+.text-input{
+	border: 1px solid #CCC;
+	-webkit-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+	-moz-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+	box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    color: black;
+	font: 16px Lucida Sans, Trebuchet MS, Tahoma, sans-serif;
+	height: 8px;
+	padding: 10px;
+	width: 12vw;
 }
