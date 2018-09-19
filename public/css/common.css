@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     border-width: 0px;
+    background-color: antiquewhite;
 }
 header{
     display: flex;
@@ -8,7 +9,7 @@ header{
     width: 100vw;
     justify-content: space-between;
     align-items: center;
-    background-color : deepskyblue;
+    background-color : #007fdb;
     color:black;
     font-weight: 10;
     font-size: 20px;
@@ -45,17 +46,16 @@ header{
     font-size: 24px;
     letter-spacing: 2px;
     line-height: 1.8;
-    background-color: #77FFEE;
+    background-color: #dbebfa;
     padding: 10px 20px;
-    border: 3px dashed #0000AA;
+    border: 3px groove #004d73;
     font-family: times, serif;
 }
 main{
-    padding: 50px 0px 0px 0px;
-    height: 700px;
+    padding: 50px 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .footer-tab{
     display: flex;
@@ -66,7 +66,7 @@ main{
 }
 footer{
     height: 100px;
-    background-color:deepskyblue;
+    background-color:#007fdb;
     color:black;
     font-weight: 100;
     font-size: 20px;
