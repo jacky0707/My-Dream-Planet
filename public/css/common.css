@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     border-width: 0px;
+    background-color: antiquewhite;
 }
 header{
     display: flex;
@@ -8,25 +9,25 @@ header{
     width: 100vw;
     justify-content: space-between;
     align-items: center;
-    background-color : deepskyblue;
+    background-color : #007fdb;
     color:black;
-    font-weight: 250;
+    font-weight: 10;
     font-size: 20px;
     font-family: times, serif;
 }
 .header{
-    height: 70px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 .logo {
-    height: 60px;
+    height: 70px;
 }
 .left-header{
     padding-left: 50px;
-    width:300px;
+    width:350px;
 }
 .right-header{
     padding-right: 50px;
@@ -41,34 +42,33 @@ header{
     flex-direction: column;
     right: 30px;
     bottom: 150px;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 24px;
     letter-spacing: 2px;
     line-height: 1.8;
-    background-color: #77FFEE;
+    background-color: #dbebfa;
     padding: 10px 20px;
-    border: 3px dashed #0000AA;
+    border: 3px groove #004d73;
     font-family: times, serif;
 }
 main{
-    padding: 50px 0px 0px 0px;
-    height: 700px;
+    padding: 50px 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .footer-tab{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width:70vw;
+    width:60vw;
 }
 footer{
-    height: 80px;
-    background-color:deepskyblue;
+    height: 100px;
+    background-color:#007fdb;
     color:black;
-    font-weight: 250;
+    font-weight: 100;
     font-size: 20px;
     display: flex;
     flex-direction: row;
