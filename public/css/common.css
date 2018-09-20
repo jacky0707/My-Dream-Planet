@@ -5,6 +5,7 @@ body{
     margin: 0px;
     border-width: 0px;
     background-image: url("../img/space.png");
+    background-attachment:fixed;
     background-size:100vw;
     border-width: 0px;
     color:white;
@@ -55,19 +56,97 @@ header{
 }
 .sidebar{
     position: fixed;
+    right: -40px;
+    bottom: 35vh;
     display :flex;
     flex-direction: column;
-    right: 30px;
-    bottom: 150px;
-    font-weight: 100;
-    font-size: 24px;
-    letter-spacing: 2px;
-    line-height: 1.8;
-    background-color: #dbebfa;
-    padding: 10px 20px;
-    border: 3px groove #004d73;
-    font-family: times, serif;
+    height: 80px;
+    width: 120px;
+    font-size: 14px;
 }
+.side-UFO{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background: url("../img/UFO.png") rgba(255,255,255,0.3);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition:transform 0.5s;
+    color:black;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.first-UFO{
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+}
+.second-UFO{
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+}
+.third-UFO{
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+}
+.fourth-UFO{
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+}
+.fifth-UFO{
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+}
+.sidebar:hover .start-UFO{
+    display: none;
+    height: 400px;
+    width: 320px;
+}
+.side-bar-menu{
+    
+}
+.sidebar:hover .first-UFO{
+    opacity: 1;
+    position: absolute;
+    transform: translateX(-20px) translateY(150px);
+    height: 100%;
+    width: 100%;
+}
+.sidebar:hover .second-UFO{
+    opacity: 1;
+    position: absolute;
+    transform: translateX(-100px) translateY(80px);
+    height: 100%;
+    width: 100%;
+}
+.sidebar:hover .third-UFO{
+    opacity: 1;
+    position: absolute;
+    transform: translateX(-160px);
+    height: 100%;
+    width: 100%;
+}
+.sidebar:hover .fourth-UFO{
+    opacity: 1;
+    position: absolute;
+    transform: translateX(-100px) translateY(-80px);
+    height: 100%;
+    width: 100%;
+}
+.sidebar:hover .fifth-UFO{
+    opacity: 1;
+    position: absolute;
+    transform: translateX(-20px) translateY(-150px);
+    height: 100%;
+    width: 100%;
+}
+
 main{
     padding: 50px 0px;
     display: flex;
