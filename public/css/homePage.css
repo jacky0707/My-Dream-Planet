@@ -18,6 +18,7 @@
     width: 40vw;
 }
 .dream-list-part{
+    padding-top: 30px;
     width: 25vw;
     display:flex;
     flex-direction: column;
@@ -27,14 +28,13 @@
     justify-content: space-around;
     display:flex;
     flex-wrap: wrap;
-    width: 21vw;
+    width: 24vw;
 }
 .dream-button{
-    height: 5vw;
-    width: 5vw;
+    height: 6vw;
+    width: 6vw;
     margin: 1vw;
     border-radius: 10%;
-    background: solid 1px transparent;
 }
 .label{
     display:flex;
@@ -77,6 +77,10 @@
     width: 12vw;
     text-align: center;
 }
+.planet-name{
+    font-size: 24px;
+    height: 16px;
+}
 .planet-complete-button{
     height: 100px;
     width: 25vw;
@@ -86,4 +90,79 @@
     background-color: transparent;
     color: orange;
     font-size: 24px;
+}
+.house{
+    background: url("../img/house.png") rgb(0,191,255, 0.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.car{
+    background: url("../img/car.png") rgb(255,215,0, 0.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.wedding{
+    background: url("../img/wedding.png") rgb(0,191,255, 0.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.kid{
+    background: url("../img/baby.png") rgb(255,215,0, 0.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.parent{
+    background: url("../img/parent.png") rgb(0,191,255, 0.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.travel{
+    background: url("../img/travel.png") rgb(255,215,0, 0.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.retire{
+    background: url("../img/retire.png") rgb(0,191,255, 0.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.entrepreneur{
+    background: url("../img/company.png") rgb(255,215,0, 0.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.others{
+    background: url("../img/others.png") rgb(0,191,255, 0.5);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.dream-list{
+    position: relative;
+    width: 25vw;
+    height: 45vw;
+    background: url("../img/list.png");
+    background-size: 25vw 45vw;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.dream-list-content{
+    position:absolute;
+    top:7vw;
+    left: 3vw;
+    height: 35vw;
+    width: 19vw;
+    overflow: scroll;
+    background-color: rgb(0,0,0, 0.5);
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
 }
