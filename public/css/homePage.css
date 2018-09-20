@@ -100,48 +100,56 @@
 }
 .car{
     background: url("../img/car.png") rgb(255,215,0, 0.5);
+    background: url("../img/car.png") rgba(255,215,0, 0.5);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .wedding{
     background: url("../img/wedding.png") rgb(0,191,255, 0.5);
+    background: url("../img/wedding.png") rgba(0,191,255, 0.5);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .kid{
     background: url("../img/baby.png") rgb(255,215,0, 0.5);
+    background: url("../img/baby.png") rgba(255,215,0, 0.5);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .parent{
     background: url("../img/parent.png") rgb(0,191,255, 0.5);
+    background: url("../img/parent.png") rgba(0,191,255, 0.5);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .travel{
     background: url("../img/travel.png") rgb(255,215,0, 0.5);
+    background: url("../img/travel.png") rgba(255,215,0, 0.5);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .retire{
     background: url("../img/retire.png") rgb(0,191,255, 0.5);
+    background: url("../img/retire.png") rgba(0,191,255, 0.5);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .entrepreneur{
     background: url("../img/company.png") rgb(255,215,0, 0.5);
+    background: url("../img/company.png") rgba(255,215,0, 0.5);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .others{
     background: url("../img/others.png") rgb(0,191,255, 0.5);
+    background: url("../img/others.png") rgba(0,191,255, 0.5);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
