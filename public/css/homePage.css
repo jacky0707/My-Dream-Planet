@@ -93,6 +93,7 @@
 }
 .house{
     background: url("../img/house.png") rgb(0,191,255, 0.5);
+    background: url("../img/house.png") rgba(0,191,255, 0.5);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
