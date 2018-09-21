@@ -1,9 +1,13 @@
 .planet{
-    margin: 50px 0px;
     height: 35vw;
     width: 35vw;
+    right: 5vw;
+    top: 141px;
+    -webkit-transition: 1s;
+    transition: 1s;
     background-image: url("../img/venus.png") ;
     background-size: contain;
+    position: absolute;
 }
 .dream-part{
     width: 30vw;
@@ -15,14 +19,15 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    width: 40vw;
+    width: 45vw;
+    position: relative;
 }
 .dream-list-part{
-    padding-top: 30px;
     width: 25vw;
     display:flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .button-part{
     justify-content: space-around;
@@ -34,12 +39,16 @@
     height: 6vw;
     width: 6vw;
     margin: 1vw;
-    border-radius: 10%;
+    border-width: 0px;
+    border-radius: 35%;
+    box-shadow:inset 0px 0px 10px 5px ;
+
 }
 .label{
     display:flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: calc(35vw + 50px);
 }
 .home-page-info{
     text-align: center;
@@ -50,17 +59,22 @@
     height: 4vw;
     width: 4vw;
     border-radius: 100%;
-    background-color: wheat;
+    border:solid 1px black;
+    box-shadow:inset 0px 0px 10px 5px;
+}
+.boy-button{
+    background: url("../img/boy.png") rgb(245,222,179, 0.8);
+    background: url("../img/boy.png") rgba(245,222,179, 0.8);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    border:solid 1px black;
-}
-.boy-button{
-    background-image: url("../img/boy.png") ;
 }
 .girl-button{
-    background-image: url("../img/girl.png") ;
+    background: url("../img/girl.png") rgb(245,222,179, 0.8);
+    background: url("../img/girl.png") rgba(245,222,179, 0.8);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .text-input{
 	border: 1px solid #CCC;
@@ -90,88 +104,126 @@
     background-color: transparent;
     color: orange;
     font-size: 24px;
+    margin-top: 50px;
 }
 .house{
-    background: url("../img/house.png") rgb(0,191,255, 0.5);
-    background: url("../img/house.png") rgba(0,191,255, 0.5);
+    background: url("../img/house.png") rgb(245,222,179, 0.8);
+    background: url("../img/house.png") rgba(245,222,179, 0.8);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .car{
-    background: url("../img/car.png") rgb(255,215,0, 0.5);
-    background: url("../img/car.png") rgba(255,215,0, 0.5);
+    background: url("../img/car.png") rgb(166,255,204, 0.5);
+    background: url("../img/car.png") rgba(166,255,204, 0.5);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .wedding{
-    background: url("../img/wedding.png") rgb(0,191,255, 0.5);
-    background: url("../img/wedding.png") rgba(0,191,255, 0.5);
+    background: url("../img/wedding.png") rgb(245,222,179, 0.8);
+    background: url("../img/wedding.png") rgba(245,222,179, 0.8);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .kid{
-    background: url("../img/baby.png") rgb(255,215,0, 0.5);
-    background: url("../img/baby.png") rgba(255,215,0, 0.5);
+    background: url("../img/baby.png") rgb(166,255,204, 0.5);
+    background: url("../img/baby.png") rgba(166,255,204, 0.5);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .parent{
-    background: url("../img/parent.png") rgb(0,191,255, 0.5);
-    background: url("../img/parent.png") rgba(0,191,255, 0.5);
+    background: url("../img/parent.png") rgb(245,222,179, 0.8);
+    background: url("../img/parent.png") rgba(245,222,179, 0.8);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .travel{
-    background: url("../img/travel.png") rgb(255,215,0, 0.5);
-    background: url("../img/travel.png") rgba(255,215,0, 0.5);
+    background: url("../img/travel.png") rgb(166,255,204,0.5);
+    background: url("../img/travel.png") rgba(166,255,204,0.5);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .retire{
-    background: url("../img/retire.png") rgb(0,191,255, 0.5);
-    background: url("../img/retire.png") rgba(0,191,255, 0.5);
+    background: url("../img/retire.png") rgb(245,222,179, 0.8);
+    background: url("../img/retire.png") rgba(245,222,179, 0.8);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .entrepreneur{
-    background: url("../img/company.png") rgb(255,215,0, 0.5);
-    background: url("../img/company.png") rgba(255,215,0, 0.5);
+    background: url("../img/company.png") rgb(166,255,204,0.5);
+    background: url("../img/company.png") rgba(166,255,204,0.5);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .others{
-    background: url("../img/others.png") rgb(0,191,255, 0.5);
-    background: url("../img/others.png") rgba(0,191,255, 0.5);
+    background: url("../img/others.png") rgb(245,222,179, 0.8);
+    background: url("../img/others.png") rgba(245,222,179, 0.8);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; 
 }
 .dream-list{
+    -webkit-transition: 1s;
+    transition: 1s;
     position: relative;
-    width: 25vw;
-    height: 45vw;
-    background: url("../img/list.png");
-    background-size: 25vw 45vw;
-    background-repeat: no-repeat;
-    background-position: center center; 
-}
-.dream-list-content{
-    position:absolute;
-    top:7vw;
-    left: 3vw;
+    top: 141px;
+    right: 2vw;
+    width: 20vw;
     height: 35vw;
-    width: 19vw;
-    overflow: scroll;
-    background-color: rgb(0,0,0, 0.5);
-    background-size: 100%;
+    box-shadow:inset 0px 0px 100px 5px rgb(166,255,204);
+    border-radius: 80px;
+}
+.dream-list-title{
+    padding: 2vw 0px 1vw 0px;
+    width: 20vw;
     display: flex;
     justify-content: space-around;
+    font-size: 28px;
+}
+.dream-list-content{
+    height: 75%;
+    width: 20vw;
+    overflow: scroll;
+    font-size: 24px;    
+    display: flex;
+    justify-content: space-around;
+    color:orange;
+}
+.small-planet-part{
+    position: relative;
+    width: 75vw;
+}
+.small-planet{
+    position:absolute;
+    top:5vw;
+    right: 50vw;
+    height: 7vw;
+    width: 7vw;
+}
+.big-list-part{
+    position: relative;
+    width: 25vw;
+    height: 50vw;
+}
+.big-list{
+    position: relative;
+    right: 34vw;
+    top: 0px;
+    width: 40vw;
+    height: 45vw;
+    box-shadow:inset 0px 0px 100px 5px rgb(166,255,204);
+    border-radius: 80px;
+}
+.big-list-title{
+    width:100%;
+}
+.big-list-content{
+    width:100%;
 }
