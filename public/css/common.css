@@ -107,7 +107,7 @@ header{
 .sidebar:hover .second-UFO{
     opacity: 1;
     position: absolute;
-    transform: translateX(-12vw) translateY(90px);
+    transform: translateX(-13vw) translateY(90px);
     height: 80px;
     width: 120px;
 }
