@@ -6,6 +6,7 @@
     <link rel=stylesheet type="text/css" href="../css/common.css">
     <link rel=stylesheet type="text/css" href="../css/homePage.css">
     <title>My Planet</title>
+    <script src="../js/homePage.js"></script>
 </head>
 <body>
     <header>
@@ -46,7 +47,7 @@
     </div>
 
     <main>
-        <div class="dream-part">
+        <div class="dream-part" id="dream-part">
             <label class="home-page-info">
                 <div class="home-page-info">性別</div>
                 <button class="gender-button boy-button"></button>
@@ -67,54 +68,21 @@
                 <button class="dream-button others"></button>
             </div>
         </div>
-        <div class="planet-part">
-            <label class="label">
+        <div class="planet-part" id="planet-part">
+            <label class="label" id="planet-name">
                 <div class="home-page-info">夢想星球名</div>
                 <input type="text" class="text-input planet-name">
             </label>
-            <div class="planet"></div>
-            <button class="planet-complete-button">看看我的星球表現!!</button>
+            <div class="planet" id="planet"></div>
+            <button class="planet-complete-button" id="planet-complete-button" onclick="showPlanetDetail()">看看我的星球表現!!</button>
         </div>
-        <div class="dream-list-part">
+        <div class="dream-list-part" id="dream-list-part">
             <!--從local Storage 拿-->
-            <div class="dream-list">
-                <div class="dream-list-content">
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
-                        吃飽睡好常尿尿<br>
+            
+            <div class="dream-list" id="dream-list">
+                <div class="dream-list-title" id="dream-list-title">夢想清單</div>
+                <div class="dream-list-content" id="dream-list-content">
+                        嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>嗨<br>
                 </div>
             </div>
         </div>
