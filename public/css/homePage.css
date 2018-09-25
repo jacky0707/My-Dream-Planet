@@ -8,6 +8,13 @@
     background-image: url("../img/venus.png") ;
     background-size: contain;
     position: absolute;
+    animation: planetTurn 60s linear infinite;
+    border-radius: 50%;
+}
+@keyframes planetTurn{
+    to{
+        transform: rotate(1turn);
+    }
 }
 .dream-part{
     width: 30vw;
@@ -42,7 +49,9 @@
     border-width: 0px;
     border-radius: 35%;
     box-shadow:inset 0px 0px 10px 5px ;
-
+}
+.dream-button:active{
+    animation: spinner 0.2s infinite linear;
 }
 .label{
     display:flex;
@@ -162,6 +171,7 @@
     background-repeat: no-repeat;
     background-position: center center; 
 }
+
 .others{
     background: url("../img/others.png") rgb(245,222,179, 0.8);
     background: url("../img/others.png") rgba(245,222,179, 0.8);
@@ -169,6 +179,7 @@
     background-repeat: no-repeat;
     background-position: center center; 
 }
+
 .dream-list{
     -webkit-transition: 1s;
     transition: 1s;
@@ -226,4 +237,68 @@
 }
 .big-list-content{
     width:100%;
+}
+.adding-dream{
+    width: 6vw;
+    height: 6vw;
+    transition: 1.5s;
+    -webkit-transition: all 1s;
+}
+@keyframes spinner {
+	from {
+        box-shadow: 0 10px 20px rgba(0,0,0, 0.2);
+        transform: rotateX(0);	
+    }
+	
+	to {
+        box-shadow: 0 10px 20px rgba( 0,0,0, 0.2);
+        transform: rotateX(360deg); 
+    }
+}
+.planet-house{
+    display: none;
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    background: url(../img/house.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 100;
+}
+.planet-car{
+    display: none;
+    width: 40vw;
+    height: 40vw;
+    top: -2.5vw;
+    left: -2.5vw;
+    position: absolute;
+    background: url(../img/planet_car.png);
+    background-size: 4vw 3vw;
+    background-repeat: no-repeat;
+    background-position: center top;
+    animation: carDriving 15s linear infinite;
+}
+@keyframes carDriving{
+    to{
+        transform: rotate(-1turn);
+    }
+}
+.planet-plane{
+    display: none;
+    width: 45vw;
+    height: 45vw;
+    top: -5vw;
+    left: -5vw;
+    position: absolute;
+    background: url(../img/plane.png);
+    background-size: 4vw 3vw;
+    background-repeat: no-repeat;
+    background-position: center top;
+    animation: planeFlying 15s linear infinite;
+}
+@keyframes planeFlying{
+    to{
+        transform: rotate(1turn);
+    }
 }
