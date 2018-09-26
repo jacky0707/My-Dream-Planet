@@ -43,45 +43,57 @@ function initDreams(){
                 case "house":
                     let house = document.createElement("DIV")
                     house.classList.add('planet-house')
-                    if(document.getElementsByClassName('planet-house').length == 0){
-                        house.style.transform="rotate(-45deg)"
-                        house.style.top="2vw";
-                        house.style.left="2vw";
-                    }else if(document.getElementsByClassName('planet-house').length == 1){
-                        house.style.transform="rotate(60deg)"
-                        house.style.right="0vw";
-                        house.style.top="6vw";
-                    }else{
-                        house.style.transform="rotate(225deg)"
-                        house.style.left="2vw"
-                        house.style.bottom="2vw"
-                    }
+                    house.style.transform="rotate( "+(Math.floor((Math.random() * 9) + 1))*40+"deg )"
                     document.getElementById('planet').appendChild(house)
                     setTimeout(function(){house.style.display="block"},2000)
                     break;
                 case "car":
                     let car = document.createElement("DIV")
                     car.classList.add('planet-car')
-                    car.style.transform="rotate(0deg)"
+                    car.style.transform="rotate( 0deg )"
                     document.getElementById('planet').appendChild(car)
                     setTimeout(function(){car.style.display="block"},2000)
                     break;
                 case "wedding":
+                    let wedding = document.createElement("DIV")
+                    wedding.classList.add('planet-ring')
+                    wedding.style.transform="rotateX(-45deg)"
+                    document.getElementById('planet').appendChild(wedding)
+                    setTimeout(function(){wedding.style.display="block"},2000)
                     break;
                 case "kid":
+                    let kid = document.createElement("DIV")
+                    kid.classList.add('planet-kid')
+                    kid.style.transform="rotate( "+Math.floor((Math.random() * 360) + 1)+"deg )"
+                    document.getElementById('planet').appendChild(kid)
+                    setTimeout(function(){kid.style.display="block"},2000)
                     break;
                 case "parent":
+                    let parent = document.createElement("DIV")
+                    parent.classList.add('planet-parent')
+                    parent.style.transform="rotate(-135deg) rotateX(-30deg)"
+                    document.getElementById('planet').appendChild(parent)
+                    setTimeout(function(){parent.style.display="block"},2000)
                     break;
                 case "travel":
                     let plane = document.createElement("DIV")
                     plane.classList.add('planet-plane')
-                    plane.style.transform="rotate(0deg)"
+                    plane.style.transform="rotate( 0deg )"//" + (Math.floor((Math.random() * 360) + 1)) + "
                     document.getElementById('planet').appendChild(plane)
                     setTimeout(function(){plane.style.display="block"},2000)
                     break;
                 case "retire":
+                    let retire = document.createElement("DIV")
+                    retire.classList.add('planet-retire')
+                    document.getElementById('planet').appendChild(retire)
+                    setTimeout(function(){retire.style.display="block"},2000)
                     break;
                 case "entrepreneur":
+                    let entrepreneur = document.createElement("DIV")
+                    entrepreneur.classList.add('planet-entrepreneur')
+                    entrepreneur.style.transform="rotate( "+((Math.floor((Math.random() * 9) + 1))*40-20)+"deg )"
+                    document.getElementById('planet').appendChild(entrepreneur)
+                    setTimeout(function(){entrepreneur.style.display="block"},2000)
                     break;
                 case "others":
                     break;
