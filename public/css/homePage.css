@@ -8,6 +8,12 @@
     background-image: url("../img/venus.png") ;
     background-size: contain;
     position: absolute;
+    animation: planetTurn 60s linear infinite;
+}
+@keyframes planetTurn{
+    to{
+        transform: rotate(1turn);
+    }
 }
 .dream-part{
     width: 30vw;
@@ -42,7 +48,9 @@
     border-width: 0px;
     border-radius: 35%;
     box-shadow:inset 0px 0px 10px 5px ;
-
+}
+.dream-button:active{
+    animation: spinner 0.2s infinite linear;
 }
 .label{
     display:flex;
@@ -162,6 +170,7 @@
     background-repeat: no-repeat;
     background-position: center center; 
 }
+
 .others{
     background: url("../img/others.png") rgb(245,222,179, 0.8);
     background: url("../img/others.png") rgba(245,222,179, 0.8);
@@ -169,6 +178,7 @@
     background-repeat: no-repeat;
     background-position: center center; 
 }
+
 .dream-list{
     -webkit-transition: 1s;
     transition: 1s;
@@ -194,7 +204,7 @@
     font-size: 24px;    
     display: flex;
     justify-content: space-around;
-    color:orange;
+    color:black;
 }
 .small-planet-part{
     position: relative;
@@ -226,4 +236,153 @@
 }
 .big-list-content{
     width:100%;
+}
+.adding-dream{
+    width: 6vw;
+    height: 6vw;
+    transition: 1.5s;
+    -webkit-transition: all 1s;
+}
+@keyframes spinner {
+	from {
+        box-shadow: 0 10px 20px rgba(0,0,0, 0.2);
+        transform: rotateX(0);	
+    }
+	
+	to {
+        box-shadow: 0 10px 20px rgba( 0,0,0, 0.2);
+        transform: rotateX(360deg); 
+    }
+}
+.planet-house{
+    display: none;
+    width: 35vw;
+    height: 36vw;
+    top:-0.5vw;
+    position: absolute;
+    background: url(../img/house.png);
+    background-size: 4vw 4vw;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 400;
+}
+.planet-car{
+    display: none;
+    width: 35vw;
+    height: 38vw;
+    top: -1.5vw;
+    position: absolute;
+    background: url(../img/planet_car.png);
+    background-size: 3vw 2vw;
+    background-repeat: no-repeat;
+    background-position: center top;
+    animation: carDriving 15s linear infinite;
+    z-index: 100;
+}
+@keyframes carDriving{
+    to{
+        transform: rotate(-1turn);
+    }
+}
+.planet-plane{
+    display: none;
+    width: 35vw;
+    height: 40vw;
+    top: -2.5vw;
+    position: absolute;
+    background: url(../img/plane.png);
+    background-size: 4vw 3vw;
+    background-repeat: no-repeat;
+    background-position: center top;
+    animation: planeFlying 15s linear infinite;
+    z-index: 500;
+}
+@keyframes planeFlying{
+    to{
+        transform: rotate(1turn);
+    }
+}
+.planet-ring{
+    display: none;
+    width: 35vw;
+    height: 27vw;
+    top:4vw;
+    position: absolute;
+    background: url(../img/wedding.png);
+    background-size: 5vw 5vw;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 100;
+}
+.planet-kid{
+    display: none;
+    width: 35vw;
+    height: 28vw;
+    top:3.5vw;
+    position: absolute;
+    background: url(../img/baby.png);
+    background-size: 3vw 3vw;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 100;
+}
+.planet-parent{
+    display: none;
+    width: 35vw;
+    height: 25vw;
+    top:5vw;
+    position: absolute;
+    background: url(../img/parent.png);
+    background-size: 5vw 5vw;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 100;
+}
+.planet-retire{
+    display: none;
+    width: 35vw;
+    height: 17.5vw;
+    top:0px;
+    position: absolute;
+    background: url(../img/retire.png);
+    background-size: 6vw 6vw;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: 100;
+}
+.planet-entrepreneur{
+    display: none;
+    width: 35vw;
+    height: 36vw;
+    top:-0.5vw;
+    position: absolute;
+    background: url(../img/company.png);
+    background-size: 4vw 4vw;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 400;
+}
+.list-text{
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    width: 5vw;
+    height: 20px;
+    background-color: transparent;
+    color: black;
+}
+.list-text::placeholder{
+    color:black;
+}
+.list-ranger{
+    width: 11vw;
+    margin: 0px;
+    height: 24px;
+}
+.list-label{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20vw;
+    height: 25px;
 }
