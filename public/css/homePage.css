@@ -188,14 +188,14 @@
     width: 20vw;
     height: 35vw;
     box-shadow:inset 0px 0px 100px 5px rgb(166,255,204);
-    border-radius: 80px;
+    border-radius: 45px;
     background-color: rgb(255,255,255,0.3)
 }
 .dream-list-title{
     padding: 2vw 0px 1vw 0px;
     width: 20vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 28px;
 }
 .dream-list-content{
