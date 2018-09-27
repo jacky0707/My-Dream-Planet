@@ -46,6 +46,7 @@ function initDreams(){
                     house.style.transform="rotate( "+(Math.floor((Math.random() * 9) + 1))*40+"deg )"
                     document.getElementById('planet').appendChild(house)
                     setTimeout(function(){house.style.display="block"},2000)
+                    addToList("house")
                     break;
                 case "car":
                     let car = document.createElement("DIV")
@@ -123,4 +124,70 @@ function getPlanetCenter(){
     planetPosition.x=(planetSquare.left+planetSquare.right)/2
     planetPosition.y=(planetSquare.top+planetSquare.bottom)/2+heightTop
     return planetPosition
+}
+
+function addToList(type){
+    let newList = createList("DIV",{atrs:{
+        className:"list-label"
+    }},document.getElementById('dream-list-content'))
+
+    let dreamName = createList("INPUT",{atrs:{
+        className:"dream-name",
+        placeholder:type,
+        type:"text"
+    }},newList)
+
+    let listSelect = createList("SELECT",{atrs:{
+        className:"list-select",
+        type:"text"
+    }},newList)
+
+    let opt1 = createList("OPTION",{atrs:{
+        innerHTML:"每年",
+        value:"每年"
+    }},listSelect)
+    let opt2 = createList("OPTION",{atrs:{
+        innerHTML:"每月",
+        value:"每月"
+    }},listSelect)
+    let opt3 = createList("OPTION",{atrs:{
+        innerHTML:"一次",
+        value:"一次"
+    }},listSelect)
+
+    let dreamCost = createList("INPUT",{atrs:{
+        className:"dream-money dream-name",
+        value:"50000",
+        type:"text",
+    }},newList)
+    dreamCost.onkeyup=function(){this.value=this.value.replace(/\D/g,'')}
+    dream.onafterpaste=function(){this.value=this.value.replace(/\D/g,'')}
+    
+    let dollar = createList("DIV",{atrs:{
+        innerHTML:"元"
+    }},newList)
+    let cancelButton = createList("BUTTON",{atrs:{
+        className:"list-cancel"
+    }},newList)
+}
+function createList(tagName,settings,parentElement){
+    let obj=document.createElement(tagName);
+	if(settings.atrs){setAttributes(obj,settings.atrs);}
+	if(settings.stys){setStyles(obj,settings.stys);}
+	if(parentElement instanceof Element){parentElement.appendChild(obj);}
+    return obj;
+}
+
+function setAttributes(obj,attributes){
+    for(let name in attributes){
+		obj[name]=attributes[name];
+	}
+	return obj;
+}
+
+function setStyles(obj,styles){
+    for(let name in styles){
+		obj.style[name]=styles[name];
+	}
+	return obj;
 }
