@@ -26,23 +26,35 @@ function initDreams(){
             switch(event.target.id) {
                 case "house":
                 if(document.getElementsByClassName('planet-house').length==9){
-                    alert('夢想星的住宅用地已經用完了><')
+                    let tooMuch = createElement("DIV",{atrs:{
+                        innerHTML:'夢想星的住宅用地已經用完了><',
+                        className:'too-much'
+                    }},document.getElementsByTagName("BODY")[0])
+                    event.target.disabled = true
+                    setTimeout(function(){tooMuch.remove()},2000)
                 }else{
                     flyingAnimation(event)
                     let house = document.createElement("DIV")
-                    house.setAttribute("id",event.target.id+document.getElementsByClassName('planet-house').length)
-                    console.log(event.target.id+document.getElementsByClassName('planet-house').length)
                     house.classList.add('planet-house')
-                    house.style.transform="rotate( "+(Math.floor((Math.random() * 9) + 1))*40+"deg )"
+                    housePlace = JSON.parse(window.localStorage.getItem('housePlace'))
+                    chosenPlace = housePlace.pop()
+                    house.setAttribute("id",event.target.id+chosenPlace)
+                    house.style.transform="rotate( "+chosenPlace+"deg )"
+                    window.localStorage.setItem('housePlace',JSON.stringify(housePlace))
+
                     document.getElementById('planet').appendChild(house)
-                    addToList("house",document.getElementsByClassName('planet-house').length-1)
+                    addToList("house",chosenPlace)
                     setTimeout(function(){house.style.display="block"},2000)
-                    
                 }
                     break;
                 case "car":
-                if(document.getElementsByClassName('planet-car').length==31){
-                    alert('夢想星只能負載30台車，還請您委屈一下。')
+                if(document.getElementsByClassName('planet-car').length==15){
+                    let tooMuch = createElement("DIV",{atrs:{
+                        innerHTML:'夢想星只能負載15台車，還請您委屈一下。',
+                        className:'too-much'
+                    }},document.getElementsByTagName("BODY")[0])
+                    event.target.disabled = true
+                    setTimeout(function(){tooMuch.remove()},2000)
                 }else{
                     flyingAnimation(event)
                     let car = document.createElement("DIV")
@@ -57,7 +69,12 @@ function initDreams(){
                 break;
                 case "wedding":
                 if(document.getElementsByClassName('planet-ring').length==1){
-                    alert('夢想星祝福一次就找到幸福。')
+                    let tooMuch = createElement("DIV",{atrs:{
+                        innerHTML:'夢想星祝福您一次就找到幸福<3',
+                        className:'too-much'
+                    }},document.getElementsByTagName("BODY")[0])
+                    event.target.disabled = true
+                    setTimeout(function(){tooMuch.remove()},2000)
                 }else{
                     flyingAnimation(event)
                     let wedding = document.createElement("DIV")
@@ -71,8 +88,13 @@ function initDreams(){
                 }
                 break;
                 case "kid":
-                if(document.getElementsByClassName('planet-kid').length==50){
-                    alert('一個不嫌少兩個恰恰好，50個只怕肚皮吃不消')
+                if(document.getElementsByClassName('planet-kid').length==30){
+                    let tooMuch = createElement("DIV",{atrs:{
+                        innerHTML:'一個不嫌少兩個恰恰好，30個只怕肚皮吃不消',
+                        className:'too-much'
+                    }},document.getElementsByTagName("BODY")[0])
+                    event.target.disabled = true
+                    setTimeout(function(){tooMuch.remove()},2000)
                 }else{
                     flyingAnimation(event)
                     let kid = document.createElement("DIV")
@@ -85,8 +107,13 @@ function initDreams(){
                 }
                 break;
                 case "parent":
-                if(document.getElementsByClassName('planet-parent').length==1){
-                    alert('長輩數量已達夢想星上限')
+                if(document.getElementsByClassName('planet-parent').length==2){
+                    let tooMuch = createElement("DIV",{atrs:{
+                        innerHTML:'長輩數量已達夢想星上限',
+                        className:'too-much'
+                    }},document.getElementsByTagName("BODY")[0])
+                    event.target.disabled = true
+                    setTimeout(function(){tooMuch.remove()},2000)
                 }else{
                     flyingAnimation(event)
                     let parent = document.createElement("DIV")
@@ -99,22 +126,32 @@ function initDreams(){
                 }        
                 break;
                 case "travel":
-                if(document.getElementsByClassName('planet-plane').length==31){
-                    alert('太多飛機夢想星受不了的。')
+                if(document.getElementsByClassName('planet-travel').length==15){
+                    let tooMuch = createElement("DIV",{atrs:{
+                        innerHTML:'太多飛機夢想星受不了的。',
+                        className:'too-much'
+                    }},document.getElementsByTagName("BODY")[0])
+                    event.target.disabled = true
+                    setTimeout(function(){tooMuch.remove()},2000)
                 }else{
                     flyingAnimation(event)
-                    let plane = document.createElement("DIV")
-                    plane.setAttribute("id",event.target.id+document.getElementsByClassName('planet-plane').length)
-                    plane.classList.add('planet-plane')
-                    plane.style.transform="rotate( 0deg )"//" + (Math.floor((Math.random() * 360) + 1)) + "
-                    document.getElementById('planet').appendChild(plane)
-                    addToList("travel",document.getElementsByClassName('planet-plane').length-1)
-                    setTimeout(function(){plane.style.display="block"},2000)
+                    let travel = document.createElement("DIV")
+                    travel.setAttribute("id",event.target.id+document.getElementsByClassName('planet-travel').length)
+                    travel.classList.add('planet-travel')
+                    travel.style.transform="rotate( 0deg )"//" + (Math.floor((Math.random() * 360) + 1)) + "
+                    document.getElementById('planet').appendChild(travel)
+                    addToList("travel",document.getElementsByClassName('planet-travel').length-1)
+                    setTimeout(function(){travel.style.display="block"},2000)
                 }
                 break;
                 case "retire":
                 if(document.getElementsByClassName('planet-retire').length==1){
-                    alert('夢想星上退休一次就可以享天倫之樂了呦')
+                    let tooMuch = createElement("DIV",{atrs:{
+                        innerHTML:'夢想星上退休一次就可以享天倫之樂了呦',
+                        className:'too-much'
+                    }},document.getElementsByTagName("BODY")[0])
+                    event.target.disabled = true
+                    setTimeout(function(){tooMuch.remove()},2000)
                 }else{
                     flyingAnimation(event)
                     let retire = document.createElement("DIV")
@@ -127,19 +164,23 @@ function initDreams(){
                 break;
                 case "entrepreneur":
                 if(document.getElementsByClassName('planet-entrepreneur').length==9){
-                    alert('9命怪貓,9次創業')
-                    createElement("DIV",{atrs:{
-                        innerHTML:'9命怪貓,9次創業',
+                    let tooMuch = createElement("DIV",{atrs:{
+                        innerHTML:'太多公司了，夢想星壓力很大',
                         className:'too-much'
                     }},document.getElementsByTagName("BODY")[0])
+                    event.target.disabled = true
+                    setTimeout(function(){tooMuch.remove()},2000)
                 }else{
                     flyingAnimation(event)
                     let entrepreneur = document.createElement("DIV")
-                    entrepreneur.setAttribute("id",event.target.id+document.getElementsByClassName('planet-entrepreneur').length)
                     entrepreneur.classList.add('planet-entrepreneur')
-                    entrepreneur.style.transform="rotate( "+((Math.floor((Math.random() * 9) + 1))*40-20)+"deg )"
+                    entrepreneurPlace = JSON.parse(window.localStorage.getItem('entrepreneurPlace'))
+                    chosenPlace = entrepreneurPlace.pop()                    
+                    entrepreneur.setAttribute("id",event.target.id+chosenPlace)
+                    entrepreneur.style.transform="rotate( "+chosenPlace+"deg )"
+                    window.localStorage.setItem('entrepreneurPlace',JSON.stringify(entrepreneurPlace))
                     document.getElementById('planet').appendChild(entrepreneur)
-                    addToList("entrepreneur",document.getElementsByClassName('planet-entrepreneur').length-1)
+                    addToList("entrepreneur",chosenPlace)
                     setTimeout(function(){entrepreneur.style.display="block"},2000)
                 }
                 break;
@@ -243,6 +284,8 @@ function addToList(type,dreamLength){
         listId = id.split("list")[1]
         document.getElementById(id).remove()
         document.getElementById(listId).remove()
+        console.log(document.getElementById(type))
+        document.getElementById(type).disabled = false
     }
 }
 function createElement(tagName,settings,parentElement){

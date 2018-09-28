@@ -283,7 +283,7 @@
         transform: rotate(-1turn);
     }
 }
-.planet-plane{
+.planet-travel{
     display: none;
     width: 35vw;
     height: 40vw;
@@ -409,4 +409,16 @@ button{
     width: 7vw;
     font-size: 8px;
     font-style: italic;
+}
+.too-much{
+    position: fixed;
+    width: 10vw;
+    height: 8vw;
+    top:30vw;
+    left: 30vw;
+    background-color: rgb(255,255,255,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px
 }
