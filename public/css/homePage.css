@@ -188,13 +188,14 @@
     width: 20vw;
     height: 35vw;
     box-shadow:inset 0px 0px 100px 5px rgb(166,255,204);
-    border-radius: 80px;
+    border-radius: 45px;
+    background-color: rgb(255,255,255,0.3)
 }
 .dream-list-title{
     padding: 2vw 0px 1vw 0px;
     width: 20vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 28px;
 }
 .dream-list-content{
@@ -202,8 +203,6 @@
     width: 20vw;
     overflow: scroll;
     font-size: 24px;    
-    display: flex;
-    justify-content: space-around;
     color:black;
 }
 .small-planet-part{
@@ -284,7 +283,7 @@
         transform: rotate(-1turn);
     }
 }
-.planet-plane{
+.planet-travel{
     display: none;
     width: 35vw;
     height: 40vw;
@@ -362,27 +361,64 @@
     background-position: center top;
     z-index: 400;
 }
-.list-text{
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 1px;
-    width: 5vw;
-    height: 20px;
-    background-color: transparent;
-    color: black;
-}
-.list-text::placeholder{
-    color:black;
-}
-.list-ranger{
-    width: 11vw;
-    margin: 0px;
-    height: 24px;
-}
+
 .list-label{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 20vw;
-    height: 25px;
+    height: 30px;
+    font-size: 14px;
+}
+.dream-name{
+    height: 30px;
+    width: 5vw;
+    background: transparent;
+    background-size: 40px 60px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    border:none;
+    font-size: 16px;
+    color:black;
+    text-align: right;
+}
+.dream-name::placeholder{
+    font-size:12px;
+    color:black;
+    font-style: italic;
+}
+.list-select{
+    width: 5vw;
+}
+.list-cancel{
+    height: 1vw;
+    width: 1vw;
+    background: url(../img/cancel.png) transparent;
+    border:none;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+input{
+    outline:none;
+}
+button{
+    outline:none;
+}
+.dream-money{
+    width: 7vw;
+    font-size: 8px;
+    font-style: italic;
+}
+.too-much{
+    position: fixed;
+    width: 10vw;
+    height: 8vw;
+    top:30vw;
+    left: 30vw;
+    background-color: rgb(255,255,255,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px
 }
