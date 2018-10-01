@@ -282,18 +282,15 @@ function addToList(type,dreamLength){
     cancelButton.onclick=function(){
         id = this.parentElement.id
         listId = id.split("list")[1]
-        let positionArray = JSON.parse(window.localStorage.getItem(type+'Place'))
-
-        positionArray.push(dreamLength)
-        window.localStorage.setItem(type+'Place',JSON.stringify(positionArray))
+        if(listId.indexOf("house") != -1 || listId.indexOf("entrepreneur") != -1){
+            let positionArray = JSON.parse(window.localStorage.getItem(type+'Place'))
+        
+            positionArray.push(dreamLength)
+            window.localStorage.setItem(type+'Place',JSON.stringify(positionArray))
+        }
+        
         document.getElementById(id).remove()
-        console.log(id)
-        console.log(listId)
-        console.log(type)
-        console.log(dreamLength)
         document.getElementById(listId).remove()
-
-        console.log(document.getElementById(type))
         document.getElementById(type).disabled = false
     }
 }
