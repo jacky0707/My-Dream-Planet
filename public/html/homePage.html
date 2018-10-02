@@ -7,9 +7,40 @@
     <link rel="stylesheet" type="text/css" href="../css/homePage.css">
     <title>My Planet</title>
     <script src="../js/homePage.js"></script>
+    <script src="../js/lib.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
     <script>
     localStorage.setItem('housePlace',JSON.stringify([40,80,120,160,200,240,280,320,360]))
     localStorage.setItem('entrepreneurPlace',JSON.stringify([20,60,100,140,180,220,260,300,340]))
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDmJMCUnhgNKXYS4DhktixGkstwFzqJS6s",
+        authDomain: "my-planet-a107f.firebaseapp.com",
+        databaseURL: "https://my-planet-a107f.firebaseio.com",
+        projectId: "my-planet-a107f",
+        storageBucket: "my-planet-a107f.appspot.com",
+        messagingSenderId: "581646137368"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script>
+    var ui = new firebaseui.auth.AuthUI(firebase.auth());
+        
+        ui.start('#firebaseui-auth-container', {
+            signInSuccessUrl: './memberPage.html',
+            signInOptions: [
+                {
+                    provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
+                    requireDisplayName: false
+                },
+                firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+                firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+            ]
+        });
     </script>
 </head>
 <body onload="initDreams()">
@@ -22,12 +53,14 @@
             </form>
         </div>
         <div class="header right-header">
-            <div class="header-tab">商品總覽</div>
-            <div class="header-tab">客製化保單</div>
-            <div class="header-tab">會員專區</div>
+            <button class="header-tab">商品總覽</button>
+            <button class="header-tab">客製化保單</button>
+            <button class="header-tab" onclick="showLoginView()">會員專區</button>
         </div>
     </header>
-    
+    <div class="login-view" id="login-view">
+        <div id="firebaseui-auth-container"></div>
+    </div>
     <div class="sidebar">
         <div class="side-UFO start-UFO">
             <a>保險區<br></a>

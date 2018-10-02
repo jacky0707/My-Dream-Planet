@@ -37,8 +37,15 @@ header{
     align-items: center;
     height: 100px;
     width: 13vw;
-    background-image:url("../img/rocket.png");
+    border:none;
+    font-size: 16px;
+    background-color: transparent;
+    background-image:url("../img/rocket.png") ;
     background-size: 13vw 100px;
+    border-radius: 10px;
+}
+.header-tab:active{
+    box-shadow: 0px 0px 5px 5px rgba(255,255,255,0.7) inset;
 }
 .logo {
     height: 100px;
@@ -225,4 +232,38 @@ footer{
 	height: 8px;
 	padding: 10px;
 	width: 8vw;
+}
+.login-view{
+    display: none;
+    width: 30vw;
+    position: fixed;
+    top: 13vw;
+    padding: 3vw 0vw;
+    border-radius: 2vw;
+    background-color: rgb(17, 30, 51);
+    border:yellow 1px solid;
+    z-index: 100;
+}
+.logout-button{
+    border-radius: 50%;
+    position: absolute;
+    width: 9vw;
+    height: 5vw;
+    top:3vw;
+    right:3vw;
+}
+.close-login-button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    padding: 0px;
+    background-color: red;
+    border:none;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    margin: 0px;
 }

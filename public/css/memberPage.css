@@ -1,0 +1,41 @@
+.member-part{
+    width: 70vw;
+    height: 70vw;
+    border-radius: 5vw;
+    background: rgba(206, 184, 241, 0.4);
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.member-data-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:70%;
+    height: 100%;
+
+}
+.member-data{
+    margin-top: 35px;
+    width:100%;
+    height: 100%; 
+}
+.member-side-bar-part{
+    width: 30%;
+    height: 100%;
+}
+.member-planet-part{
+    display: none;
+    width:70%;
+    height: 100%;
+}
+.member-planet{
+    widows: 100%;
+    height: 80%;
+}
+.adjust-planet-button{
+    width:100%;
+    height: 80%;
+}
