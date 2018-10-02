@@ -301,16 +301,3 @@ function addToList(type,dreamLength){
 }
 
 
-function setAttributes(obj,attributes){
-    for(let name in attributes){
-		obj[name]=attributes[name];
-	}
-	return obj;
-}
-
-function setStyles(obj,styles){
-    for(let name in styles){
-		obj.style[name]=styles[name];
-	}
-	return obj;
-}

@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/common.css">
     <link rel="stylesheet" type="text/css" href="../css/memberPage.css">
+    <script src="../js/lib.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDmJMCUnhgNKXYS4DhktixGkstwFzqJS6s",
+            authDomain: "my-planet-a107f.firebaseapp.com",
+            databaseURL: "https://my-planet-a107f.firebaseio.com",
+            projectId: "my-planet-a107f",
+            storageBucket: "my-planet-a107f.appspot.com",
+            messagingSenderId: "581646137368"
+        };
+        firebase.initializeApp(config);
+    </script>
+
     <title>My Planet</title>
 </head>
 <body>
@@ -22,7 +37,7 @@
             <div class="header-tab">會員專區</div>
         </div>
     </header>
-    
+    <button class="logout-button" onclick="logout()">登出</button>
     <div class="sidebar">
         <div class="side-UFO start-UFO">
             <a>保險區<br></a>
