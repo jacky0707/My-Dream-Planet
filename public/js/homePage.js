@@ -15,6 +15,11 @@ function showPlanetDetail(){
     dreamList.classList.add('big-list');
     dreamListTitle.classList.add('big-list-title')
     dreamListContent.classList.add('big-list-content')
+    for(i=planet.childNodes.length-1;i>=0;i--){
+        console.log(i)
+        console.log(planet.childNodes[i])
+        planet.childNodes[i].style.display="none"
+    }
 }
 function initDreams(){
     let numberOfDreams = document.getElementById('button-part').children.length
@@ -294,13 +299,7 @@ function addToList(type,dreamLength){
         document.getElementById(type).disabled = false
     }
 }
-function createElement(tagName,settings,parentElement){
-    let obj=document.createElement(tagName);
-	if(settings.atrs){setAttributes(obj,settings.atrs);}
-	if(settings.stys){setStyles(obj,settings.stys);}
-	if(parentElement instanceof Element){parentElement.appendChild(obj);}
-    return obj;
-}
+
 
 function setAttributes(obj,attributes){
     for(let name in attributes){
