@@ -3,10 +3,10 @@
 #Demo Page
 [Planet-version_1](https://jacky0707.github.io/My-Dream-Planet/public/html/homePage.html)
 
-header & footer
+Header & Footer
 
-hover UFOs
+Hover UFOs
 
-spinning dream buttons
+Spinning dream buttons
 
-able to delete dreams on planet
+Able to delete dreams on planet
